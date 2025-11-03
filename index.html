@@ -1,67 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PC Info</title>
-  <link rel="stylesheet" href="style/home.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitectura de Máquinas 2 - UNI</title>
+  <link rel="stylesheet" href="style/inicio.css">
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
-  <!-- Fondo cambiante -->
-  <div id="background"></div>
+  <!-- Navbar cargado por JS -->
+  <div id="navbar"></div>
 
-  <!-- Sección 1 -->
-  <section class="section intro">
-    <div class="container">
-      <h1>Bienvenido a PC Info</h1>
-      <p>Una plataforma informativa sobre computadoras, componentes y más. Aprende, compara y elige lo mejor para ti.</p>
-      <img src="image/alta1.png" alt="Imagen de una PC" class="intro-img">
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="heroContent">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROoBLJBbLXi-Wh2mjgIdpKYOugbUCWR_cvCA&s" alt="Logo UNI" class="logo">
+      <div>
+        <h1 class="title">Arquitectura de Máquinas 2</h1>
+        <p class="subtitle">Ingeniería en Computación — Universidad Nacional de Ingeniería</p>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Sección 2: Categorías -->
-  <section class="section dark">
-    <div class="container">
-      <h2>Categorías de Productos</h2>
+  <main class="main">
+    <!-- Acerca de la Asignatura -->
+    <section class="section">
+      <div class="card">
+        <h2 class="sectionTitle">Acerca de la Asignatura</h2>
+        <div class="content">
+          <div class="text">
+            <p><strong>Arquitectura de Máquinas 2</strong> es un curso avanzado que explora los fundamentos del diseño de sistemas computacionales modernos.</p>
+            <p>Desde el modelo von Neumann hasta arquitecturas paralelas, memorias caché y multiprocesadores, este curso te prepara para entender y optimizar el rendimiento de hardware real.</p>
+            <p>Con un enfoque educativo, práctico y ético, promovemos el uso responsable de la tecnología y el diseño eficiente para un futuro sostenible.</p>
+          </div>
+          <img src="https://concepto.de/wp-content/uploads/2020/06/Computadora-de-escritorio-scaled-e1724955496406.jpg" alt="Setup de computadoras" class="image">
+        </div>
+      </div>
+    </section>
 
-      <div id="categories"></div>
-    </div>
-  </section>
+    <!-- Misión y Visión -->
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <h3 class="cardTitle">Misión</h3>
+          <p>Formar ingenieros capaces de diseñar, analizar y optimizar arquitecturas computacionales avanzadas con un enfoque ético, eficiente y sostenible.</p>
+        </div>
+        <div class="card">
+          <h3 class="cardTitle">Visión</h3>
+          <p>Ser un referente en educación tecnológica que combine excelencia académica con responsabilidad ambiental y social.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Sección 3 -->
-  <section class="section">
-    <div class="container">
-      <h2>Datos Curiosos</h2>
-      <p>Descubre hechos interesantes sobre la historia y tecnología de las computadoras. Por ejemplo, ¿sabías que la primera computadora pesaba más de 30 toneladas?</p>
-      <a href="curiosidades.html" class="btn">Ver Más</a>
-    </div>
-  </section>
+    <!-- Compromiso Ambiental -->
+    <section class="section">
+      <div class="card">
+        <h2 class="sectionTitle">Compromiso con el Medio Ambiente</h2>
+        <div class="envGrid">
+          <div class="envItem">
+            <div class="icon">Recycle</div>
+            <h4>Diseño Eficiente</h4>
+            <p>Optimizamos consumo energético en procesadores.</p>
+          </div>
+          <div class="envItem">
+            <div class="icon">Energy</div>
+            <h4>Energía Verde</h4>
+            <p>Promovemos centros de datos con energías renovables.</p>
+          </div>
+          <div class="envItem">
+            <div class="icon">Tree</div>
+            <h4>Huella Reducida</h4>
+            <p>Arquitecturas que minimizan desechos electrónicos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Sección 4 -->
-  <section class="section dark">
-    <div class="container">
-      <h2>Recomendaciones</h2>
-      <p>Obtén sugerencias personalizadas basadas en tu presupuesto y necesidades.</p>
-      <a href="recomendaciones.html" class="btn">Obtener Recomendación</a>
-    </div>
-  </section>
+    <!-- Testimonios -->
+    <section class="section">
+      <div class="card">
+        <h2 class="sectionTitle">Lo que dicen nuestros estudiantes</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p class="comment">"¡Explicaciones claras y visuales! Me ayudó mucho con pipeline."</p>
+            <div class="author"><strong>Ana López</strong> — <span>Estudiante</span></div>
+          </div>
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p class="comment">"El enfoque en eficiencia energética me abrió los ojos."</p>
+            <div class="author"><strong>Carlos Méndez</strong> — <span>Egresado</span></div>
+          </div>
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p class="comment">"Excelente recurso para complementar clases."</p>
+            <div class="author"><strong>Prof. Ramírez</strong> — <span>Docente</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Sección 5 -->
-  <section class="section">
-    <div class="container">
-      <h2>Comentarios de Usuarios</h2>
-      <div id="reviews" class="grid"></div>
-    </div>
-  </section>
+    <!-- Llamado a acción -->
+    <section class="section">
+      <div class="cta">
+        <h2>¡Explora el futuro de la computación!</h2>
+        <p>Navega por las unidades y domina la arquitectura de máquinas.</p>
+        <button class="ctaButton">Comenzar ahora</button>
+      </div>
+    </section>
+  </main>
 
-  <!-- Sección 6 -->
-  <section class="section dark">
-    <div class="container">
-      <h2>Equipo de Desarrollo</h2>
-      <div id="team" class="grid"></div>
-    </div>
-  </section>
+  <!-- Footer cargado por JS -->
+  <div id="footer"></div>
 
-  <script src="js/home.js"></script>
+  <script src="js/loadComponents.js"></script>
 </body>
 </html>

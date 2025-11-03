@@ -1,0 +1,82 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROoBLJBbLXi-Wh2mjgIdpKYOugbUCWR_cvCA&s" alt="Logo UNI" class="logo-img" />
+      <span>Arquitectura de Máquinas 2</span>
+    </a>
+
+    <ul class="desktop-menu">
+      <li><a href="index.html">Inicio</a></li>
+
+      <li class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown('unidades')">
+          Unidades <span class="arrow"></span>
+        </button>
+        <ul id="dropdown-unidades" class="dropdown-menu">
+          <li><a href="unidad1.html">Unidad 1: Introducción</a></li>
+          <li><a href="unidad2.html">Unidad 2: Arquitectura von Neumann</a></li>
+          <li><a href="unidad3.html">Unidad 3: Pipeline</a></li>
+          <li><a href="unidad4.html">Unidad 4: Memoria Caché</a></li>
+          <li><a href="unidad5.html">Unidad 5: Paralelismo</a></li>
+          <li><a href="unidad6.html">Unidad 6: Multiprocesadores</a></li>
+          <li><a href="unidad7.html">Unidad 7: Arquitecturas Modernas</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <button class="dropdown-btn" onclick="toggleDropdown('componentes')">
+          Componentes <span class="arrow"></span>
+        </button>
+        <ul id="dropdown-componentes" class="dropdown-menu">
+          <li><a href="cpu.html">CPU</a></li>
+          <li><a href="ram.html">RAM</a></li>
+          <li><a href="almacenamiento.html">Disco Duro / SSD</a></li>
+          <li><a href="motherboard.html">Tarjeta Madre</a></li>
+          <li><a href="fuente.html">Fuente de Poder</a></li>
+          <li><a href="gpu.html">GPU</a></li>
+        </ul>
+      </li>
+
+      <li><a href="recursos.html">Recursos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <button class="mobile-toggle" onclick="toggleMobileMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu hidden">
+    <a href="index.html">Inicio</a>
+    <button onclick="toggleMobileDropdown('unidades')">Unidades</button>
+    <div id="mobile-unidades" class="mobile-submenu hidden">
+      <a href="unidad1.html">Unidad 1</a>
+      <a href="unidad2.html">Unidad 2</a>
+      <a href="unidad3.html">Unidad 3</a>
+    </div>
+    <button onclick="toggleMobileDropdown('componentes')">Componentes</button>
+    <div id="mobile-componentes" class="mobile-submenu hidden">
+      <a href="cpu.html">CPU</a>
+      <a href="ram.html">RAM</a>
+      <a href="gpu.html">GPU</a>
+    </div>
+    <a href="recursos.html">Recursos</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+</nav>
+
+<script>
+function toggleDropdown(name) {
+  document.getElementById(`dropdown-${name}`).classList.toggle('show');
+}
+
+function toggleMobileMenu() {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+}
+
+function toggleMobileDropdown(name) {
+  document.getElementById(`mobile-${name}`).classList.toggle('hidden');
+}
+</script>
