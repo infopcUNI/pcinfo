@@ -1,0 +1,22 @@
+import { ThemeProvider } from './components/ThemeContext';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import './App.css'
+import NotFound from './components/NotFound';
+
+export default function App() {
+  return (
+    <ThemeProvider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </ThemeProvider>
+  )
+}
