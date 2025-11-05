@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="hover:text-green-300 transition-colors">Inicio</Link>
+            <Link to="pcinfo/" className="hover:text-green-300 transition-colors">Inicio</Link>
             
             {/* Dropdown for Units */}
             <div className="relative">
@@ -133,7 +133,7 @@ const Navbar: React.FC = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2">
-            <Link to="/" className="block hover:text-green-300 py-2">Inicio</Link>
+            <Link to="pcinfo/" className="block hover:text-green-300 py-2">Inicio</Link>
             
             {/* Mobile Dropdown */}
             <div>
@@ -154,7 +154,7 @@ const Navbar: React.FC = () => {
               {isDropdownOpen && (
                 <div className="ml-4 space-y-1">
                   <Link
-                    to="/unidad1"
+                    to="pcinfo/unidad1"
                     className="block text-sm hover:text-green-300 py-1"
                     onClick={() => {
                       setIsDropdownOpen(false);
@@ -164,7 +164,7 @@ const Navbar: React.FC = () => {
                     Introducción a la arquitectura y organización de la computadora
                   </Link>
                   <Link
-                    to="/unidad2"
+                    to="pcinfo/unidad2"
                     className="block text-sm hover:text-green-300 py-1"
                     onClick={() => {
                       setIsDropdownOpen(false);
@@ -174,7 +174,7 @@ const Navbar: React.FC = () => {
                     Organización del CPU
                   </Link>
                   <Link
-                    to="/unidad3"
+                    to="pcinfo/unidad3"
                     className="block text-sm hover:text-green-300 py-1"
                     onClick={() => {
                       setIsDropdownOpen(false);
@@ -184,7 +184,7 @@ const Navbar: React.FC = () => {
                     Diseño del Conjunto de Instrucciones
                   </Link>
                   <Link
-                    to="/unidad4"
+                    to="pcinfo/unidad4"
                     className="block text-sm hover:text-green-300 py-1"
                     onClick={() => {
                       setIsDropdownOpen(false);
@@ -194,7 +194,7 @@ const Navbar: React.FC = () => {
                     Unidad de Ejecución
                   </Link>
                   <Link
-                    to="/unidad5"
+                    to="pcinfo/unidad5"
                     className="block text-sm hover:text-green-300 py-1"
                     onClick={() => {
                       setIsDropdownOpen(false);
@@ -204,7 +204,7 @@ const Navbar: React.FC = () => {
                     Unidad de Control
                   </Link>
                   <Link
-                    to="/unidad6"
+                    to="pcinfo/unidad6"
                     className="block text-sm hover:text-green-300 py-1"
                     onClick={() => {
                       setIsDropdownOpen(false);
@@ -214,7 +214,7 @@ const Navbar: React.FC = () => {
                     Sistema de Memoria
                   </Link>
                   <Link
-                    to="/unidad7"
+                    to="pcinfo/unidad7"
                     className="block text-sm hover:text-green-300 py-1"
                     onClick={() => {
                       setIsDropdownOpen(false);
@@ -227,7 +227,7 @@ const Navbar: React.FC = () => {
               )}
             </div>
 
-            <Link to="/recursos" className="block hover:text-green-300 py-2">Recursos Descargables</Link>
+            <Link to="pcinfo/recursos" className="block hover:text-green-300 py-2">Recursos Descargables</Link>
 
             {/* Mobile Theme Toggle */}
             <button
