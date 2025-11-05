@@ -43,49 +43,49 @@ const Navbar: React.FC = () => {
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-blue-700 dark:bg-gray-800 rounded-md shadow-lg py-1 w-48">
                   <Link
-                    to="/unidad1"
+                    to="pcinfo/unidad1"
                     className="block px-4 py-2 text-sm hover:bg-blue-600 dark:hover:bg-gray-700 hover:text-green-300"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     Introducción a la arquitectura y organización de la computadora
                   </Link>
                   <Link
-                    to="/unidad2"
+                    to="pcinfo/unidad2"
                     className="block px-4 py-2 text-sm hover:bg-blue-600 dark:hover:bg-gray-700 hover:text-green-300"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     Organización del CPU
                   </Link>
                   <Link
-                    to="/unidad3"
+                    to="pcinfo/unidad3"
                     className="block px-4 py-2 text-sm hover:bg-blue-600 dark:hover:bg-gray-700 hover:text-green-300"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     Diseño del Conjunto de Instrucciones
                   </Link>
                   <Link
-                    to="/unidad4"
+                    to="pcinfo/unidad4"
                     className="block px-4 py-2 text-sm hover:bg-blue-600 dark:hover:bg-gray-700 hover:text-green-300"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     Unidad de Ejecución
                   </Link>
                   <Link
-                    to="/unidad5"
+                    to="pcinfo/unidad5"
                     className="block px-4 py-2 text-sm hover:bg-blue-600 dark:hover:bg-gray-700 hover:text-green-300"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     Unidad de Control
                   </Link>
                   <Link
-                    to="/unidad6"
+                    to="pcinfo/unidad6"
                     className="block px-4 py-2 text-sm hover:bg-blue-600 dark:hover:bg-gray-700 hover:text-green-300"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     Sistema de Memoria
                   </Link>
                   <Link
-                    to="/unidad7"
+                    to="pcinfo/unidad7"
                     className="block px-4 py-2 text-sm hover:bg-blue-600 dark:hover:bg-gray-700 hover:text-green-300"
                     onClick={() => setIsDropdownOpen(false)}
                   >
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
               )}
             </div>
 
-            <Link to="/recursos" className="hover:text-green-300 transition-colors">Recursos Descargables</Link>
+            <Link to="pcinfo/recursos" className="hover:text-green-300 transition-colors">Recursos Descargables</Link>
 
             {/* Theme Toggle */}
             <button
@@ -161,7 +161,7 @@ const Navbar: React.FC = () => {
                       setIsOpen(false);
                     }}
                   >
-                    Unidad 1
+                    Introducción a la arquitectura y organización de la computadora
                   </Link>
                   <Link
                     to="/unidad2"
@@ -181,7 +181,7 @@ const Navbar: React.FC = () => {
                       setIsOpen(false);
                     }}
                   >
-                    Unidad 3
+                    Diseño del Conjunto de Instrucciones
                   </Link>
                   <Link
                     to="/unidad4"
@@ -191,7 +191,7 @@ const Navbar: React.FC = () => {
                       setIsOpen(false);
                     }}
                   >
-                    Unidad 4
+                    Unidad de Ejecución
                   </Link>
                   <Link
                     to="/unidad5"
@@ -201,7 +201,7 @@ const Navbar: React.FC = () => {
                       setIsOpen(false);
                     }}
                   >
-                    Unidad 5
+                    Unidad de Control
                   </Link>
                   <Link
                     to="/unidad6"
@@ -211,7 +211,7 @@ const Navbar: React.FC = () => {
                       setIsOpen(false);
                     }}
                   >
-                    Unidad 6
+                    Sistema de Memoria
                   </Link>
                   <Link
                     to="/unidad7"
@@ -221,7 +221,7 @@ const Navbar: React.FC = () => {
                       setIsOpen(false);
                     }}
                   >
-                    Unidad 7
+                    Sistema de Entrada/Salida
                   </Link>
                 </div>
               )}
